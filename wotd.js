@@ -5,7 +5,7 @@ input.addEventListener("keypress", function(e) {
         //e.preventDefault();
         console.log(Winput.value);
         let input_hash = md5(Winput.value);
-        console.log(Winput.value);
+        console.log(input_hash);
         if (Winput.value === "inspector"){
             document.getElementById('wotd-out').innerHTML = 'Nice!';
             console.log("Nice!");
