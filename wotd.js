@@ -1,7 +1,7 @@
 var input = document.getElementById("Winput");
-input.addEventListener("keypress", function(event2) {
-    if (event2.key === "Enter") {
-        event2.preventDefault();
+input.addEventListener("keypress", function(e) {
+    if (e.key === "Enter") {
+        //e.preventDefault();
         console.log(Winput.value);
     }
 });
