@@ -9,6 +9,9 @@ input.addEventListener("keypress", function(e) {
         if (input_hash == '8e96c1fb87ac069c2a39f1ed61b10428'){
             document.getElementById('wotd-out').innerHTML = "Nice, that is Tuesday's Word of the Day!";
         }
+        else if (input_hash == 'fd661d6be65eecb8a8866f6832b24a30'){
+            document.getElementById('wotd-out').innerHTML = "Nice, that is Wednesday's Word of the Day!";
+        }
         else if(input_hash == '8449280a23f8c4fcfb13469f6dc19592'){
             document.getElementById('wotd-out').innerHTML = "Nice, that is Thursday's Word of the Day!";
         }
