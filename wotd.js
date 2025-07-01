@@ -6,7 +6,11 @@ input.addEventListener("keypress", function(e) {
         // NEED TO ADD FAKE WORDS SO THEY CANT BE DECODED OR MAYBE ADD AN ENCRYPTION USING THE WORD OF THE DAY ITSELF
         console.log(Winput.value);
         let input_hash = md5(Winput.value);
-        if (input_hash == '8e96c1fb87ac069c2a39f1ed61b10428'){
+        if (input_hash == 'b637af78ada000a39023b4ead9db041a')
+        {
+            document.getElementById('wotd-out').innerHTML = "Nice, that is Monday's Word of the Day!";
+        }
+        else if (input_hash == '8e96c1fb87ac069c2a39f1ed61b10428'){
             document.getElementById('wotd-out').innerHTML = "Nice, that is Tuesday's Word of the Day!";
         }
         else if (input_hash == 'fd661d6be65eecb8a8866f6832b24a30'){
