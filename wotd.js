@@ -3,6 +3,7 @@ console.log(input);
 input.addEventListener("keypress", function(e) {
     if (e.key === "Enter") {
         //e.preventDefault();
+        // NEED TO ADD FAKE WORDS SO THEY CANT BE DECODED OR MAYBE ADD AN ENCRYPTION USING THE WORD OF THE DAY ITSELF
         console.log(Winput.value);
         let input_hash = md5(Winput.value);
         if (input_hash == '8e96c1fb87ac069c2a39f1ed61b10428'){
