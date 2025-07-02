@@ -36,14 +36,14 @@ input.addEventListener("keypress", function(e) {
 
 function XOR(a, b) {
     console.log("In the function " + a + " " + b);
-    var res = "";
+    const res = new Array(a.length);
     i = a.length - 1;
     while (i >= 0){
         console.log(a[i] + " " + a.charCodeAt(i));
         console.log(b[i] + " " + b.charCodeAt(i));
         console.log("Combining: " + (a.charCodeAt(i) ^ b.charCodeAt(i)).toString());
         console.log("res: " + res);
-        res = (a.charCodeAt(i) ^ b.charCodeAt(i)).toString() + res;
+        res[i] = (a.charCodeAt(i) ^ b.charCodeAt(i)).toString();
         i--;
     }
     console.log("res: " + res);
