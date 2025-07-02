@@ -35,10 +35,13 @@ input.addEventListener("keypress", function(e) {
 });
 
 function XOR(a, b) {
+    console.log("In the function " + a + " " + b);
     var res = "",
     i = a.length,
     j = b.length;
     while (i-->0 && j-->0)
+        console.log("res: " + res);
         res = (a.charCodeAt(i) ^ b.charCodeAt(j)).toString() + res;
+    console.log("res: " + res);
     return res;
 }
