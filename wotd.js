@@ -38,12 +38,14 @@ function XOR(a, b) {
     console.log("In the function " + a + " " + b);
     var res = "",
     i = a.length,
-    while (i-->0)
+    while (i >= 0){
         console.log(a[i] + " " + a.charCodeAt(i));
         console.log(b[i] + " " + b.charCodeAt(i));
         console.log("Combining: " + (a.charCodeAt(i) ^ b.charCodeAt(i)).toString());
         console.log("res: " + res);
         res = (a.charCodeAt(i) ^ b.charCodeAt(i)).toString() + res;
+        i--;
+    }
     console.log("res: " + res);
     return res;
 }
