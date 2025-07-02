@@ -40,8 +40,9 @@ function XOR(a, b) {
     i = a.length,
     j = b.length;
     while (i-->0 && j-->0)
-        console.log(a.charCodeAt(i) + b.charCodeAt(j));
-        console.log((a.charCodeAt(i) ^ b.charCodeAt(j)).toString());
+        console.log(a[i] + " " + a.charCodeAt(i));
+        console.log(b[j] + " " + b.charCodeAt(j));
+        console.log("Combining: " + (a.ctharCodeAt(i) ^ b.charCodeAt(j)).toString());
         console.log("res: " + res);
         res = (a.charCodeAt(i) ^ b.charCodeAt(j)).toString() + res;
     console.log("res: " + res);
