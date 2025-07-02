@@ -16,7 +16,8 @@ input.addEventListener("keypress", function(e) {
             document.getElementById('wotd-out').innerHTML = "Nice, that is Tuesday's Word of the Day! " + code_piece;
         }
         else if (input_hash == 'fd661d6be65eecb8a8866f6832b24a30'){
-            document.getElementById('wotd-out').innerHTML = "Nice, that is Wednesday's Word of the Day!";
+            code_piece = XORwArray(Winput.value,['35', '13', '63', '10', '35', '55', '12', '83', '77']);
+            document.getElementById('wotd-out').innerHTML = "Nice, that is Wednesday's Word of the Day! " + code_piece;
         }
         else if(input_hash == '8449280a23f8c4fcfb13469f6dc19592'){
             document.getElementById('wotd-out').innerHTML = "Nice, that is Thursday's Word of the Day!";
