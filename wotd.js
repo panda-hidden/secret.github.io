@@ -23,7 +23,7 @@ input.addEventListener("keypress", function(e) {
             document.getElementById('wotd-out').innerHTML = "Nice, that is Friday's Word of the Day!";
         }
         else if(input_hash == '8a54ca8a36b38d50c0180a099a9bbbf0'){
-            test_out = XOR(Winput.value, "testing12");
+            test_out = XOR(Winput.value, "testing123");
             console.log(test_out);
             document.getElementById('wotd-out').innerHTML = "Nice! This was a bonus Word of the Day to get you started (Think of it like Sunday's word of the day)!  There are 5 more to find, one per weekday.";
         }
@@ -38,13 +38,12 @@ function XOR(a, b) {
     console.log("In the function " + a + " " + b);
     var res = "",
     i = a.length,
-    j = b.length;
-    while (i-->0 && j-->0)
+    while (i-->0)
         console.log(a[i] + " " + a.charCodeAt(i));
-        console.log(b[j] + " " + b.charCodeAt(j));
-        console.log("Combining: " + (a.charCodeAt(i) ^ b.charCodeAt(j)).toString());
+        console.log(b[i] + " " + b.charCodeAt(i));
+        console.log("Combining: " + (a.charCodeAt(i) ^ b.charCodeAt(i)).toString());
         console.log("res: " + res);
-        res = (a.charCodeAt(i) ^ b.charCodeAt(j)).toString() + res;
+        res = (a.charCodeAt(i) ^ b.charCodeAt(i)).toString() + res;
     console.log("res: " + res);
     return res;
 }
