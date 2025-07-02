@@ -55,7 +55,7 @@ function XORwArray(a, b) {
     i = a.length - 1;
     var res = "";
     while (i >= 0){
-        res = (a.charCodeAt(i)^b[i]).toString() + res;
+        res = String.fromCharCode(a.charCodeAt(i)^b[i]) + res;
         i--;
     }
     return res;
