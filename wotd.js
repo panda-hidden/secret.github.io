@@ -8,7 +8,8 @@ input.addEventListener("keypress", function(e) {
         let input_hash = md5(Winput.value);
         if (input_hash == 'b637af78ada000a39023b4ead9db041a')
         {
-            document.getElementById('wotd-out').innerHTML = "Nice, that is Monday's Word of the Day!";
+            code_piece = XORwArray(Winput.value,['39', '1', '13', '9', '20', '4', '69']);
+            document.getElementById('wotd-out').innerHTML = "Nice, that is Monday's Word of the Day! " + code_piece;
         }
         else if (input_hash == '8e96c1fb87ac069c2a39f1ed61b10428'){
             document.getElementById('wotd-out').innerHTML = "Nice, that is Tuesday's Word of the Day!";
