@@ -36,8 +36,8 @@ input.addEventListener("keypress", function(e) {
 
 function XOR(a, b) {
     console.log("In the function " + a + " " + b);
-    var res = "",
-    i = a.length,
+    var res = "";
+    i = a.length - 1;
     while (i >= 0){
         console.log(a[i] + " " + a.charCodeAt(i));
         console.log(b[i] + " " + b.charCodeAt(i));
