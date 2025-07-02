@@ -23,7 +23,7 @@ input.addEventListener("keypress", function(e) {
             document.getElementById('wotd-out').innerHTML = "Nice, that is Friday's Word of the Day!";
         }
         else if(input_hash == '8a54ca8a36b38d50c0180a099a9bbbf0'){
-            test_out = XOR(input, "testing12");
+            test_out = XOR(Winput.value, "testing12");
             console.log(test_out);
             document.getElementById('wotd-out').innerHTML = "Nice! This was a bonus Word of the Day to get you started (Think of it like Sunday's word of the day)!  There are 5 more to find, one per weekday.";
         }
