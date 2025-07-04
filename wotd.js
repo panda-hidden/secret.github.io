@@ -2,8 +2,6 @@ var input = document.getElementById("Winput");
 console.log(input);
 input.addEventListener("keypress", function(e) {
     if (e.key === "Enter") {
-        //e.preventDefault();
-        // NEED TO ADD FAKE WORDS SO THEY CANT BE DECODED OR MAYBE ADD AN ENCRYPTION USING THE WORD OF THE DAY ITSELF
         console.log(Winput.value);
         let input_hash = md5(Winput.value);
         if (input_hash == 'b637af78ada000a39023b4ead9db041a')
@@ -36,6 +34,12 @@ input.addEventListener("keypress", function(e) {
         }
     }
 });
+
+//The below functions are used so that you guys can't cheat the secret message by inspecting elements and looking at the javascript.  
+//I XOR the secret message w/ the Word of the Days so that the secret message is encrypted, and then when its time to print the secret message on the screen
+// I XOR the encrypted message with the word of the days so that the secret message is decrypted for you guys to view. 
+// Basically don't worry about the below functions, if I hosted my own server I could avoid all this shit because i could hide the secret message on the server
+// but idk how to host a server and it costs money lol
 
 function XOR(a, b) {
     console.log("In the function " + a + " " + b);
