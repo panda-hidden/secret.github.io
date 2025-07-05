@@ -6,22 +6,28 @@ input.addEventListener("keypress", function(e) {
         let input_hash = md5(Winput.value);
         if (input_hash == 'b637af78ada000a39023b4ead9db041a')
         {
+            //:calendar:
             code_piece = XORwArray(Winput.value,['39', '1', '13', '9', '20', '4', '69']);
             document.getElementById('wotd-out').innerHTML = "Nice, that is Monday's Word of the Day! " + code_piece;
         }
         else if (input_hash == '8e96c1fb87ac069c2a39f1ed61b10428'){
+            //Get it straight from the source!
             code_piece = XORwArray(Winput.value,['60', '33', '24', '23', '23', '0', '0', '10', '25']);
             document.getElementById('wotd-out').innerHTML = "Nice, that is Tuesday's Word of the Day! " + code_piece;
         }
         else if (input_hash == 'fd661d6be65eecb8a8866f6832b24a30'){
+            // It's literally right in front of you.
             code_piece = XORwArray(Winput.value,['35', '13', '63', '10', '35', '55', '12', '83', '77']);
             document.getElementById('wotd-out').innerHTML = "Nice, that is Wednesday's Word of the Day! " + code_piece;
         }
         else if(input_hash == '8449280a23f8c4fcfb13469f6dc19592'){
+            // This one is actually quite hard to find, smire :)
+            // Note: Words of the day can be proper nouns and should be capitalized!
             code_piece = XORwArray(Winput.value,['41', '12', '14', '32', '12', '23', '25', '73']);
             document.getElementById('wotd-out').innerHTML = "Nice, that is Thursday's Word of the Day! " + code_piece;
         }
         else if(input_hash == 'c34867fa18588ae93bee8660cb1f2aec'){
+            // What if it were gray and they were called greets?
             code_piece = XORwArray(Winput.value,['3', '10', '33', '7', '3', '95', '84']);
             document.getElementById('wotd-out').innerHTML = "Nice, that is Friday's Word of the Day! " + code_piece;
         }
